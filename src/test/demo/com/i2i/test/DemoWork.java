@@ -15,14 +15,14 @@ public class DemoWork {
 	WebDriverWait wait = new WebDriverWait(driver, 20);
 
 	@Test
-	public void flipkartlogin() throws InterruptedException {
+	public void validateLoginPage() throws InterruptedException {
 
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		System.out.println("====================Loading the Login page===========================");
-		WebElement user = driver.findElement(By.name("j_username"));
-		user.sendKeys("tv3hubsys");
+		WebElement user = driver.findElement(By.id("username"));
+		user.sendKeys("superuser");
 		WebElement pass = driver.findElement(By.name("j_password"));
-		pass.sendKeys("tv3h#bsys");
+		pass.sendKeys("superuser");
 		WebElement log = driver.findElement(By.id("btnSubmit"));
 		log.click();
 
@@ -31,7 +31,7 @@ public class DemoWork {
 	public void beforeMethod() {
 
 		driver.get("http://192.168.1.173:5080/rdpv-jenkins/");
-		System.out.println("hubdev page");
+		System.out.println("=========================LoginPage===================================");
 		driver.manage().window().maximize();
 
 	}
