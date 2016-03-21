@@ -17,11 +17,19 @@ public class DemoWork {
 	@Test
 	public void validateLoginPage() throws InterruptedException {
 
+<<<<<<< HEAD:src/test/java/com/i2i/test/DemoWork.java
 		Thread.sleep(4000);
 		System.out.println("====================Loading the Login page===========================");
 		WebElement user = driver.findElement(By.id("username"));
 		user.sendKeys("superuser");
 		WebElement pass = driver.findElement(By.name("password"));
+=======
+		Thread.sleep(6000);
+		System.out.println("====================Loading the Login page===========================");
+		WebElement user = driver.findElement(By.id("username"));
+		user.sendKeys("superuser");
+		WebElement pass = driver.findElement(By.name("j_password"));
+>>>>>>> 532fa53b4602640cee0680cd71fcbd87d6c97754:src/test/demo/com/i2i/test/DemoWork.java
 		pass.sendKeys("superuser");
 		WebElement log = driver.findElement(By.id("btnSubmit"));
 		log.click();
@@ -30,8 +38,12 @@ public class DemoWork {
 	@BeforeMethod
 	public void beforeMethod() {
 
+<<<<<<< HEAD:src/test/java/com/i2i/test/DemoWork.java
 		driver.get("http://159.203.72.246:7080/rdpv-jenkins/");
 		
+=======
+		driver.get("http://192.168.1.173:5080/rdpv-jenkins/");
+>>>>>>> 532fa53b4602640cee0680cd71fcbd87d6c97754:src/test/demo/com/i2i/test/DemoWork.java
 		System.out.println("=========================LoginPage===================================");
 		driver.manage().window().maximize();
 
