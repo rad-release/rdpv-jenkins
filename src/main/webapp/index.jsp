@@ -376,7 +376,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
   	</div>
 	<div id="login">
 	
-		<form action="" class="form-vertical no-padding no-margin" name="loginForm" method="post" id="loginForm">
+		<form action="login" class="form-vertical no-padding no-margin" name="loginForm" method="GET" id="loginForm">
 	
 		<div class="lock">
 			<img class="center" alt="lock" src="images/lock.png">			
@@ -391,7 +391,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 				<div class="input-prepend">
 					<span align="center" border="0" id="LoginTable">
 						<span class="add-on"><img class="center" alt="username" src="images/user.png"></span>
-						<input type="text" style="height:auto;" placeholder="Username" onblur="clearText()" id="j_username" name="j_username">
+						<input type="text" style="height:auto;" placeholder="Username" id="username" name="username">
 					</span>
 				</div>
 			</div>
@@ -400,7 +400,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 			<div class="controls">
 				<div class="input-prepend">
 					<span class="add-on"><img class="center" alt="password" src="images/key.png"></span>
-					<input type="password" style="height:auto;" placeholder="Password" onkeypress="chksubmit(event);" onblur="clearText()" id="j_password" name="j_password">
+					<input type="password" style="height:auto;" placeholder="Password" id="password" name="password">
                 </div>
                 <span id="password_console" class="console_failed"></span>
 				<span id="user_console" class="console_failed"></span>
@@ -418,20 +418,10 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 		</div>
 	</div>
 	
-	<input type="button" onclick="submitLogin(&quot;/j_security_check&quot;)" class="btn btn-block btn btn-primary" value="Login" name="btnSubmit" id="btnSubmit">
+	<input type="submit" class="btn btn-block btn btn-primary" value="Login" name="btnSubmit" id="btnSubmit">
 	
 			
 	</form>
-	
-	
-	
-	<input type="hidden" value="Please give UserName" id="user_fail_message">
-	<input type="hidden" value="Please give PassWord" id="password_fail_message">
-	<input type="hidden" value="Verifying Username and Password..." id="control_message">
-	<input type="hidden" value="Authentication expired. Please try again." id="control_auth_expired_message">
-	<input type="hidden" value="Authentication failed. Please try again." id="control_auth_failed_message">
-
-  
   </div>
   <div id="login-copyright">
       <div id="rad-corp">2016 &copy; Radaptive</div>
