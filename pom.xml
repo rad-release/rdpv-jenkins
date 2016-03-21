@@ -38,9 +38,9 @@
 		</dependency>
 
 	</dependencies>
-	<profiles>
+	<!-- <profiles>
 		<profile>
-			<!-- <id>sel-tests</id> -->
+			<id>sel-tests</id> -->
 			<build>
 
 				<plugins>
@@ -55,13 +55,13 @@
 						<version>2.19.1</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>src/test/testng.xml</suiteXmlFile>
+								<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
-		</profile>
-	</profiles>
+		<!-- </profile>
+	</profiles> -->
 	<!-- <build> <finalName>rdpv-jenkins</finalName> </build> -->
 </project>

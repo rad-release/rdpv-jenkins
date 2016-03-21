@@ -15,14 +15,14 @@ public class DemoWork {
 	WebDriverWait wait = new WebDriverWait(driver, 20);
 
 	@Test
-	public void flipkartlogin() throws InterruptedException {
+	public void validateLoginPage() throws InterruptedException {
 
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		System.out.println("====================Loading the Login page===========================");
-		WebElement user = driver.findElement(By.name("j_username"));
-		user.sendKeys("tv3hubsys");
-		WebElement pass = driver.findElement(By.name("j_password"));
-		pass.sendKeys("tv3h#bsys");
+		WebElement user = driver.findElement(By.id("username"));
+		user.sendKeys("superuser");
+		WebElement pass = driver.findElement(By.name("password"));
+		pass.sendKeys("superuser");
 		WebElement log = driver.findElement(By.id("btnSubmit"));
 		log.click();
 
@@ -30,8 +30,9 @@ public class DemoWork {
 	@BeforeMethod
 	public void beforeMethod() {
 
-		driver.get("http://192.168.1.173:5080/rdpv-jenkins/");
-		System.out.println("hubdev page");
+		driver.get("http://159.203.72.246:7080/rdpv-jenkins/");
+		
+		System.out.println("=========================LoginPage===================================");
 		driver.manage().window().maximize();
 
 	}
@@ -39,7 +40,7 @@ public class DemoWork {
 	@AfterMethod
 	public void afterMethod() {
 
-		System.out.println("Running Browser close");
+		System.out.println("==============================Running Browser close============================");
 		driver.close();
 	}
 
