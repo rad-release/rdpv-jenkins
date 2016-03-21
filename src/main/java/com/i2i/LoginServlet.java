@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet{
 
 	      PrintWriter out = response.getWriter();
 		  String title = "Home";
-		  String content = "hello world github' "+ request.getParameter("username") +" ' your logged in successfully..."; 
+		  String content = "hello world' "+ request.getParameter("username") +" ' your logged in successfully..."; 
 	      String docType =
 	      "<!doctype html public \"-//w3c//dtd html 4.0 " +
 	      "transitional//en\">\n";
