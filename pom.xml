@@ -4,8 +4,8 @@
 	<groupId>com.rdpv.jenkins</groupId>
 	<artifactId>rdpv-jenkins</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>rdpv-jenkins Maven Webapp</name>
+	<version>1.0</version>
+	<name>rdpv-jenkins</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
