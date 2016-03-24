@@ -81,7 +81,7 @@ public class DemoWork {
 
 
 		//driver.get("http://192.168.1.173:8080");
-		driver.get("http://192.168.1.211:6080/rdpv-jenkins-1.0/");
+		driver.get("http://192.168.1.211:5080/");
 		System.out.println("==================Launching the Login Page============================");
 		driver.manage().window().maximize();
 

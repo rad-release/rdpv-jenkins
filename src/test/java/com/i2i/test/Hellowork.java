@@ -31,7 +31,7 @@ public class Hellowork {
 	public void beforeMethod() {
 
 		//driver.get("http://192.168.1.173:5080/rdpv-jenkins/");
-		driver.get("http://192.168.1.211:6080/rdpv-jenkins-1.0/");
+		driver.get("http://192.168.1.211:5080/");
 		System.out.println("=========================LoginPage===================================");
 		driver.manage().window().maximize();
 
