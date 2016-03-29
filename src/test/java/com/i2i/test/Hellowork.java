@@ -34,7 +34,7 @@ public class Hellowork {
 		}
 		System.out.println("====================Loading Home Page===========================");
 		Thread.sleep(2000);
-		Assert.assertEquals("hello' superuser ' your logged in successfully...", driver.findElement(By.xpath("//h1[text()='hello' superuser ' your logged in successfully...']")));
+		Assert.assertEquals("hello' superuser ' your logged in successfully...", driver.findElement(By.xpath("//body[@bgcolor='#f0f0f0']/h1")));
 
 	}
 	@BeforeMethod
