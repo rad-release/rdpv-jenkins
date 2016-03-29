@@ -21,7 +21,7 @@ public class Hellowork {
 		System.out.println("====================Loading the Login page===========================");
 		WebElement user = driver.findElement(By.id("username"));
 		user.sendKeys("superuser");
-		WebElement pass = driver.findElement(By.name("j_password"));
+		WebElement pass = driver.findElement(By.name("password"));
 		pass.sendKeys("superuser");
 		WebElement log = driver.findElement(By.id("btnSubmit"));
 		log.click();
