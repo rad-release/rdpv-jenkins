@@ -17,14 +17,23 @@ public class Hellowork {
 	@Test
 	public void validateLoginPage() throws InterruptedException {
 
-		Thread.sleep(6000);
+		Thread.sleep(4000);
 		System.out.println("====================Loading the Login page===========================");
+		try {
 		WebElement user = driver.findElement(By.id("username"));
 		user.sendKeys("superuser");
 		WebElement pass = driver.findElement(By.name("password"));
 		pass.sendKeys("superuser");
 		WebElement log = driver.findElement(By.id("btnSubmit"));
 		log.click();
+		} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+
+		}
+		System.out.println("====================Loading Home Page===========================");
+		Thread.sleep(2000);
+		Assert.assertEquals("hello' superuser ' your logged in successfully...", driver.findElement(By.xpath("//h1[text()='hello' superuser ' your logged in successfully...']")));
 
 	}
 	@BeforeMethod
