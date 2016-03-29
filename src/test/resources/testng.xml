@@ -4,6 +4,7 @@
   <test name="Testdemo">
     <classes>
       <class name="com.i2i.test.DemoWork"/>
+     <!--  <class name="com.i2i.test.Hellowork"/> -->
     </classes>
   </test> <!-- Testdemo -->
 </suite> <!-- Suite -->

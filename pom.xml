@@ -25,6 +25,11 @@
 			<version>2.48.0</version>
 		</dependency>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-htmlunit-driver</artifactId>
+			<version>2.48.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
@@ -64,9 +69,9 @@
 				</plugins>
 			</build>
 		</profile>
-	
-	
-	
+
+
+
 		<profile>
 			<id>sel-tests</id>
 			<build>
@@ -83,12 +88,12 @@
 						<version>2.19.1</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>rdpv-jenkins/testng.xml</suiteXmlFile>
+								<suiteXmlFile>src/test/resources/hello.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
-			</profile>
-			</profiles>
+		</profile>
+	</profiles>
 </project>
