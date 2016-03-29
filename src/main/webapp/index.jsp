@@ -356,7 +356,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 }
 </style>
 <title>
-	Contract Project
+	Contract project
 	
 </title>
 </head>
