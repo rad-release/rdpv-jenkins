@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Radaptive Sample</title>
+  <title>Radaptive Automation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -52,6 +52,15 @@
         <td>Paramesh</td>
         <td>paramesh@ideas2it.com</td>
         <td>29-03-2016 07:40:33</td>
+      </tr>
+      <tr class="info">
+        <td>rad-release</td>
+        <td>rdpv-jenkins</td>
+        <td>Product Page</td>
+        <td>master</td>
+        <td>Dinesh</td>
+        <td>dinesh@ideas2it.com</td>
+        <td>30-03-2016 07:40:33</td>
       </tr>
     </tbody>
   </table>
