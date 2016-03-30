@@ -33,7 +33,7 @@
         <td>master</td>
         <td>Mathivanan</td>
         <td>mathi@ideas2it.com</td>
-        <td>29-03-2016 09:40:33</td>
+        <td>29-03-2016 05:40:33</td>
       </tr>
       <tr class="danger">
         <td>rad-release</td>
@@ -42,7 +42,7 @@
         <td>master</td>
         <td>Dinesh</td>
         <td>dineshraghavan@ideas2it.com</td>
-        <td>29-03-2016 07:40:33</td>
+        <td>29-03-2016 06:40:33</td>
       </tr>
       <tr class="info">
         <td>rad-release</td>
@@ -51,7 +51,7 @@
         <td>master</td>
         <td>Paramesh</td>
         <td>paramesh@ideas2it.com</td>
-        <td>29-03-2016 05:40:33</td>
+        <td>29-03-2016 07:40:33</td>
       </tr>
     </tbody>
   </table>
