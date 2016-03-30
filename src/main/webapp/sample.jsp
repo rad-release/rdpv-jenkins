@@ -11,7 +11,7 @@
 <body>
 
 <div class="container">
-  <h2>Radaptive</h2>
+  <h2>Radaptive Auto</h2>
   <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->            
   <table class="table">
     <thead>
