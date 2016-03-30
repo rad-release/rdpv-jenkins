@@ -60,7 +60,7 @@
         <td>master</td>
         <td>Dinesh</td>
         <td>dinesh@ideas2it.com</td>
-        <td>30-03-2016 07:40:33</td>
+        <td>30-03-2016 07:40:32</td>
       </tr>
     </tbody>
   </table>
