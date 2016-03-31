@@ -71,6 +71,15 @@
         <td>dinesh@ideas2it.com</td>
         <td>31-03-2016 12:40:32</td>
       </tr>
+      <tr class="info">
+        <td>rad-release</td>
+        <td>rdpv-jenkins</td>
+        <td>JSP changes</td>
+        <td>master</td>
+        <td>Dinesh</td>
+        <td>dinesh@ideas2it.com</td>
+        <td>31-03-2016 12:40:32</td>
+      </tr>
     </tbody>
   </table>
 </div>
