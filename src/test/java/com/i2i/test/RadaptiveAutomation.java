@@ -21,7 +21,7 @@ public class RadaptiveAutomation {
 	@Test
 	public void validateText()throws InterruptedException{
 		
-        System.out.println("========== Radaptive Automation Test stated ==========");
+        System.out.println("========== Radaptive Automation Test started ==========");
 		WebDriver driver = new FirefoxDriver();
 
 		driver.get("http://192.168.1.211:6080/rdpv-jenkins-1.0/sample.jsp");
