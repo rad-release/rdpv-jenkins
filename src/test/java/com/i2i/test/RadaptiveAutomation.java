@@ -17,7 +17,7 @@ public class RadaptiveAutomation {
 	 */
 
 	public static void main(String[] args) throws InterruptedException {
-
+        System.out.println("========== Radaptive Automation Test stated ==========");
 		WebDriver driver = new FirefoxDriver();
 
 		driver.get("http://192.168.1.211:6080/rdpv-jenkins-1.0/sample.jsp");
