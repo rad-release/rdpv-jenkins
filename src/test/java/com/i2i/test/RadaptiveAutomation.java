@@ -16,7 +16,9 @@ public class RadaptiveAutomation {
 	 *
 	 */
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void validateText()throws InterruptedException{
+		
         System.out.println("========== Radaptive Automation Test stated ==========");
 		WebDriver driver = new FirefoxDriver();
 
