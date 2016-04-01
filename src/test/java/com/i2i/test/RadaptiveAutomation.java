@@ -26,7 +26,7 @@ public class RadaptiveAutomation {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table']/tbody")));
 
-		List<WebElement>datacolumn = driver.findElements(By.xpath("//table[@class='table']/tbody/tr[5]"));
+		List<WebElement>datacolumn = driver.findElements(By.xpath("//table[@class='table']/tbody/tr[6]"));
 		String coloumnx = "//table[@class='table']/tbody/tr[6]/td[";
 
 
