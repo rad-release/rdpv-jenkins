@@ -38,11 +38,12 @@ public class RadaptiveAutomation {
 
 			String count_coloum = coloumnx+(radaptive+6)+"]";
 
-			System.out.println("Counted Column: "+count_coloum);
+			//System.out.println("Counted Column: "+count_coloum);
 
 			String actual_data = driver.findElement(By.xpath(count_coloum)).getText();
+			Assert.assertEquals("dinesh@ideas2it.com",actual_data );
 
-
+/*
 			if(expectmail.equals(actual_data))
 			{
 				System.out.println("Acutal mail id: "+actual_data);
@@ -54,7 +55,7 @@ public class RadaptiveAutomation {
 			{
 				System.out.println("Acutal mail id: "+actual_data);
 				System.out.println("Test case is fail");
-			}
+			}*/
 		}
 	}
 
