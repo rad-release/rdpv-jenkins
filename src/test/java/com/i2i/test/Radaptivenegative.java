@@ -1,7 +1,5 @@
 package com.i2i.test;
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,17 +11,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import junit.framework.Assert;
 
-
-public class RadaptiveAutomation {
-
+public class Radaptivenegative {
+	
+	
 	/*
 	 * Creating a new account in radaptive and validating whether
 	 * it is created or not
 	 */
 
-	static Logger logger=Logger.getLogger(RadaptiveAutomation.class);
+	static Logger logger=Logger.getLogger(Radaptivenegative.class);
 	static WebDriver driver = new FirefoxDriver();
 	WebDriverWait waites = new WebDriverWait(driver, 30);
 
@@ -75,9 +74,9 @@ public class RadaptiveAutomation {
 			accountId.sendKeys("denny4");
 
 
-			WebElement password = driver.findElement(By.id("password"));
+		/*	WebElement password = driver.findElement(By.id("password"));
 			highlightElement(password);
-			password.sendKeys("1234567");
+			password.sendKeys("1234567");*/
 
 			WebElement confpassword = driver.findElement(By.id("confirmPassword"));
 			highlightElement(confpassword);
@@ -146,9 +145,6 @@ public class RadaptiveAutomation {
 
 	}
 
-
-
-
 	@AfterMethod
 	public void afterMethod() {
 
@@ -166,3 +162,5 @@ public class RadaptiveAutomation {
 		}
 	}
 }
+
+
