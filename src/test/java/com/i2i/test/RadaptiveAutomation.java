@@ -31,25 +31,27 @@ public class RadaptiveAutomation {
 	public void coreChecklistDemo() throws InterruptedException 
 	{
 
-		waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
+waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 		try {
+			
 			WebElement user = driver.findElement(By.id("j_username"));
 			highlightElement(user);
-			user.sendKeys("superuser");
+			user.sendKeys("tv3hubsys");
 			logger.info("=================userfield=========================");
 			WebElement pass = driver.findElement(By.id("password"));
 			highlightElement(pass);
-			pass.sendKeys("superuser");
+			pass.sendKeys("tv3h#bsys");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
 			highlightElement(log);
 			log.click();
+			System.out.println("Launching the home page");
 		} catch (Exception e) {
 			logger.error("Error on Login page" +" "+e);
 			Assert.fail("Login page error");
 		}
 		logger.info("==================Launching Home Page==============================");
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Account")));
-		WebElement account = driver.findElement(By.linkText("Account"));
+		/*WebElement account = driver.findElement(By.linkText("Account"));
 		highlightElement(account);
 		account.click();
 		logger.info("==================Clicking the Account==============================");
@@ -131,15 +133,15 @@ public class RadaptiveAutomation {
 		highlightElement(search);
 		search.click();
 
-		logger.info("==============================New Account is created=====================");
-
+		logger.info("==============================New Account is created=====================");*/
 	}
 
 	@BeforeMethod
 	public void beforeMethod() {
 
-
-		driver.get("http://192.168.1.211:8080/Radaptive-1.0");
+		System.out.println("Launching the site");
+		driver.get("https://hubdev.tv3cloud.com");
+		System.out.println("Maximize the windows");
 		driver.manage().window().maximize();
 
 
