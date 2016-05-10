@@ -148,7 +148,7 @@ public class Radaptivenegative {
 	@AfterMethod
 	public void afterMethod() {
 
-		//driver.close();
+		driver.close();
 	}
 
 

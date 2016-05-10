@@ -36,11 +36,11 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 			
 			WebElement user = driver.findElement(By.id("j_username"));
 			highlightElement(user);
-			user.sendKeys("tv3hubsys");
+			user.sendKeys("superuser");
 			logger.info("=================userfield=========================");
 			WebElement pass = driver.findElement(By.id("password"));
 			highlightElement(pass);
-			pass.sendKeys("tv3h#bsys");
+			pass.sendKeys("superuser");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
 			highlightElement(log);
 			log.click();
@@ -140,7 +140,8 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 	public void beforeMethod() {
 
 		System.out.println("Launching the site");
-		driver.get("https://hubdev.tv3cloud.com");
+		//URL to test
+		driver.get("http://192.168.1.211:8080/Radaptive-1.0/");
 		System.out.println("Maximize the windows");
 		driver.manage().window().maximize();
 
@@ -154,7 +155,7 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 	@AfterMethod
 	public void afterMethod() {
 
-		//driver.close();
+		driver.close();
 	}
 
 
