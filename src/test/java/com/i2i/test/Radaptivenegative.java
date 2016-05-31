@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 
 public class Radaptivenegative {
-	
-	
+
+
 	/*
 	 * Creating a new account in radaptive and validating whether
 	 * it is created or not
@@ -74,13 +74,13 @@ public class Radaptivenegative {
 			accountId.sendKeys("denny4");
 
 
-		/*	WebElement password = driver.findElement(By.id("password"));
+			/*	WebElement password = driver.findElement(By.id("password"));
 			highlightElement(password);
 			password.sendKeys("1234567");*/
 
 			WebElement confpassword = driver.findElement(By.id("confirmPassword"));
 			highlightElement(confpassword);
-			confpassword.sendKeys("12300562");
+			confpassword.sendKeys("12398776");
 			WebElement firstname = driver.findElement(By.id("firstName"));
 			highlightElement(firstname);
 			firstname.sendKeys("demo3");
