@@ -91,11 +91,11 @@ public class Radaptivenegative {
 
 			WebElement email = driver.findElement(By.id("email"));
 			highlightElement(email);
-			email.sendKeys("iw1@gmail.com");
+			email.sendKeys("test@gmail.com");
 
 			WebElement number = driver.findElement(By.id("contactNumber"));
 			highlightElement(number);
-			number.sendKeys("9383989999");
+			number.sendKeys("9383986312393");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			logger.error("Error on updating the fields: "+e);
