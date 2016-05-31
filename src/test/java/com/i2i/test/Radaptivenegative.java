@@ -80,7 +80,7 @@ public class Radaptivenegative {
 
 			WebElement confpassword = driver.findElement(By.id("confirmPassword"));
 			highlightElement(confpassword);
-			confpassword.sendKeys("1234596");
+			confpassword.sendKeys("12300562");
 			WebElement firstname = driver.findElement(By.id("firstName"));
 			highlightElement(firstname);
 			firstname.sendKeys("demo3");
