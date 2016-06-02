@@ -356,7 +356,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 }
 </style>
 <title>
-	Rad Demo
+	Radaptive
 	
 </title>
 </head>
