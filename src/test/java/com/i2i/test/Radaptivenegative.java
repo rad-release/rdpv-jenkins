@@ -138,7 +138,8 @@ public class Radaptivenegative {
 	public void beforeMethod() {
 
 
-		driver.get("http://192.168.1.211:8080/Radaptive-1.0");
+		//driver.get("http://192.168.1.211:8080/Radaptive-1.0");
+		driver.get("http://45.55.53.138:8082/Radaptive-1.0/");
 		driver.manage().window().maximize();
 
 

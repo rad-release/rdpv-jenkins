@@ -141,7 +141,8 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 
 		System.out.println("Launching the site");
 		//URL to test
-		driver.get("http://192.168.1.211:8080/Radaptive-1.0/");
+		//driver.get("http://192.168.1.211:8080/Radaptive-1.0/");
+		driver.get("http://45.55.53.138:8082/Radaptive-1.0/");		
 		System.out.println("Maximize the windows");
 		driver.manage().window().maximize();
 
