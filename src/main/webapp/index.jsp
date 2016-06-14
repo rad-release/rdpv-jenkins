@@ -372,7 +372,7 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 	<div style="display:none;" id="progress">
 		<div align="right" id="LoadingTable">
 
-			<span>Processing...</span>
+			<span>Loading...</span>
 		</div>
   	</div>
 	<div id="login">
