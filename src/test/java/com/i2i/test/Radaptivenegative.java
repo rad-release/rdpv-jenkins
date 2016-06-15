@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -23,7 +24,8 @@ public class Radaptivenegative {
 	 */
 
 	static Logger logger=Logger.getLogger(Radaptivenegative.class);
-	static WebDriver driver = new FirefoxDriver();
+	//static WebDriver driver = new FirefoxDriver();
+	static HtmlUnitDriver driver = new HtmlUnitDriver();
 	WebDriverWait waites = new WebDriverWait(driver, 30);
 
 	@Test
