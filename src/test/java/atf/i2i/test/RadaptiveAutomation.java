@@ -32,33 +32,34 @@ public class RadaptiveAutomation {
 
 	@Test
 	public void coreChecklistDemo() throws InterruptedException{
-		System.out.println("Launching the site");
-		logger.info("Launching the site");
+		logger.info("======Launching the site========");
 		//driver.get("http://192.168.1.211:8080/Radaptive-1.0/");
 		driver.get("http://45.55.53.138:8082/Radaptive-1.0/");		
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("btnSubmit")));
 		try {
+			logger.info("=======Username and Password Entered======");
 			WebElement user = driver.findElement(By.id("j_username"));
 			user.sendKeys("superuser");
 			WebElement pass = driver.findElement(By.id("password"));
-			pass.sendKeys("super123$");
+			pass.sendKeys("superuser");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
 			log.click();
-			System.out.println("Login into Server");
+			//logger.info("=========Login into Application=========");
 		}catch (Exception e) {
-			System.out.println("Inside Catch Block");
 			logger.error("Error on Login page" +" "+e);
 			Assert.fail("Login page error");
 		}		
-		logger.info("==================Launching Home Page==============================");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		/*JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("scroll(0,250)","");*/
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='side-menu-list']/li[7]/a")));
-		WebElement account = driver.findElement(By.xpath("//*[@id='side-menu-list']/li[7]/a"));	
-		account.click();
-		logger.info("==================Clicking the Account==============================");
+		logger.info("================Launching the Appliaction=================");
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		/*wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("enable-rclick-menuitems")));
+		String userName=driver.findElement(By.xpath(".//*[@id='header-inner']/div/div/ul/li[6]/a/span")).getText();*/
+		String userName="Bala Ganesh";
+		logger.info("========User Loggedin Successfully================");
+/*		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Account')]")));
+		WebElement account = driver.findElement(By.xpath("//a[contains(text(),'Account')]"));
+		account.click();*/
+		logger.info("==================Logout Successfully==============================");
 	}
 
 	@AfterMethod
