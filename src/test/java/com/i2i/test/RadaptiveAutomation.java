@@ -33,19 +33,19 @@ public class RadaptiveAutomation {
 	@Test
 	public void coreChecklistDemo() throws InterruptedException 
 	{
-
-waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
+        waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 		try {
-			
+						
 			WebElement user = driver.findElement(By.id("j_username"));
-			highlightElement(user);
+			
+			//highlightElement(user);
 			user.sendKeys("superuser");
 			logger.info("=================userfield=========================");
 			WebElement pass = driver.findElement(By.id("password"));
-			highlightElement(pass);
+			//highlightElement(pass);
 			pass.sendKeys("super123$");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
-			highlightElement(log);
+			//highlightElement(log);
 			log.click();
 			System.out.println("Launching the home page");
 		} catch (Exception e) {
@@ -53,7 +53,7 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 			Assert.fail("Login page error");
 		}
 		logger.info("==================Launching Home Page==============================");
-		waites.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Account")));
+		//waites.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Account")));
 		/*WebElement account = driver.findElement(By.linkText("Account"));
 		highlightElement(account);
 		account.click();

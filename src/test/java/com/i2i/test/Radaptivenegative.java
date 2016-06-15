@@ -33,14 +33,14 @@ public class Radaptivenegative {
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 		try {
 			WebElement user = driver.findElement(By.id("j_username"));
-			highlightElement(user);
+			//highlightElement(user);
 			user.sendKeys("superuser");
 			logger.info("=================userfield=========================");
 			WebElement pass = driver.findElement(By.id("password"));
-			highlightElement(pass);
+			//highlightElement(pass);
 			pass.sendKeys("superuser");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
-			highlightElement(log);
+			//highlightElement(log);
 			log.click();
 		} catch (Exception e) {
 			logger.error("Error on Login page" +" "+e);
@@ -49,13 +49,13 @@ public class Radaptivenegative {
 		logger.info("==================Launching Home Page==============================");
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Account")));
 		WebElement account = driver.findElement(By.linkText("Account"));
-		highlightElement(account);
+		//highlightElement(account);
 		account.click();
 		logger.info("==================Clicking the Account==============================");
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Create Account']")));
 		try {
 			WebElement createaccount = driver.findElement(By.xpath("//a[text()='Create Account']"));
-			highlightElement(createaccount);
+			//highlightElement(createaccount);
 			createaccount.click();
 		} catch (Exception e1) {
 
@@ -70,7 +70,7 @@ public class Radaptivenegative {
 
 		try {
 			WebElement accountId = driver.findElement(By.id("accountId"));
-			highlightElement(accountId);
+			//highlightElement(accountId);
 			accountId.sendKeys("denny4");
 
 
@@ -79,22 +79,22 @@ public class Radaptivenegative {
 			password.sendKeys("1234567");*/
 
 			WebElement confpassword = driver.findElement(By.id("confirmPassword"));
-			highlightElement(confpassword);
+			//highlightElement(confpassword);
 			confpassword.sendKeys("12398776");
 			WebElement firstname = driver.findElement(By.id("firstName"));
-			highlightElement(firstname);
+			//highlightElement(firstname);
 			firstname.sendKeys("demo3");
 
 			WebElement lastname = driver.findElement(By.id("lastName"));
-			highlightElement(lastname);
+			//highlightElement(lastname);
 			lastname.sendKeys("d");
 
 			WebElement email = driver.findElement(By.id("email"));
-			highlightElement(email);
+			//highlightElement(email);
 			email.sendKeys("test@gmail.com");
 
 			WebElement number = driver.findElement(By.id("contactNumber"));
-			highlightElement(number);
+			//highlightElement(number);
 			number.sendKeys("9383986312393");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -104,7 +104,7 @@ public class Radaptivenegative {
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[onclick='saveAccount();']")));
 		try {
 			WebElement save = driver.findElement(By.cssSelector("input[onclick='saveAccount();']"));
-			highlightElement(save);
+			//highlightElement(save);
 			save.click();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -123,11 +123,11 @@ public class Radaptivenegative {
 
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.id("MANAGE_ACCOUNTSaccountId")));
 		WebElement accountd = driver.findElement(By.id("MANAGE_ACCOUNTSaccountId"));
-		highlightElement(accountd);
+		//highlightElement(accountd);
 		accountd.sendKeys("denny4");
 
 		WebElement search = driver.findElement(By.id("search"));
-		highlightElement(search);
+		//highlightElement(search);
 		search.click();
 
 		logger.info("==============================New Account is created=====================");
