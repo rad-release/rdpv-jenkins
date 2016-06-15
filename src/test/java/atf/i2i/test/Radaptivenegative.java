@@ -32,7 +32,7 @@ public class Radaptivenegative {
 		//driver.get("http://192.168.1.211:8080/Radaptive-1.0");
 		driver.get("http://45.55.53.138:8082/Radaptive-1.0/");
 		driver.manage().window().maximize();
-		WebDriverWait waites = new WebDriverWait(driver, 30);
+		WebDriverWait waites = new WebDriverWait(driver, 10);
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 		try {
 			WebElement user = driver.findElement(By.id("j_username"));
@@ -46,19 +46,21 @@ public class Radaptivenegative {
 			Assert.fail("Login page error");
 		}
 		logger.info("==================Launching Home Page==============================");
-		waites.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='side-menu-list']/li[7]/a")));
+		/*waites.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='side-menu-list']/li[7]/a")));
 		WebElement account = driver.findElement(By.xpath(".//*[@id='side-menu-list']/li[7]/a"));
-		account.click();
-		logger.info("==================Clicking the Account==============================");
-		waites.until(ExpectedConditions.presenceOfElementLocated(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a")));
+		account.click();*/
+		logger.info("==================Clicking the Account Menu==============================");
+	  /*waites.until(ExpectedConditions.presenceOfElementLocated(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a")));
 		try {
 			WebElement createaccount = driver.findElement(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a"));
 			createaccount.click();
 		} catch (Exception e1) {
 			logger.error("Error on clicking CreateAccount: "+e1);
 			Assert.fail("Click on create account error");
-		}
+		}*/
 		logger.info("==================Launching the Account Section====================");
+		logger.info("==================Entering the user details====================");
+		System.out.println("Password field should not be blank");
 		waites.until(ExpectedConditions.presenceOfElementLocated(By.id("accountId")));
 		try {
 			WebElement accountId = driver.findElement(By.id("accountId"));
@@ -86,6 +88,8 @@ public class Radaptivenegative {
 			logger.error("Error on saving on account: "+e);
 			Assert.fail("Error on saving on account");
 		}
+		
+	
 		try 
 		{
 			WebElement alertId = driver.findElement(By.id("message_label"));
