@@ -1,4 +1,4 @@
-package com.i2i.test;
+package atf.i2i.test;
 
 import java.io.IOException;
 import java.io.PrintWriter;

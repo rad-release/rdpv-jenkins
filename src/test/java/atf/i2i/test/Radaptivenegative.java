@@ -1,4 +1,4 @@
-package com.i2i.test;
+package atf.i2i.test;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;

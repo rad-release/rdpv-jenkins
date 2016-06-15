@@ -1,4 +1,4 @@
-package com.i2i.test;
+package atf.i2i.test;
 
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
@@ -22,7 +22,7 @@ public class RadaptiveAutomation {
 	 */
 
 	static WebDriver driver;
-	static Logger logger=Logger.getLogger(RadaptiveAutomation.class);
+	Logger logger=Logger.getLogger(RadaptiveAutomation.class);
 
 	@BeforeSuite
 	public static void startDriver() {
@@ -33,6 +33,7 @@ public class RadaptiveAutomation {
 	@Test
 	public void coreChecklistDemo() throws InterruptedException{
 		System.out.println("Launching the site");
+		logger.info("Launching the site");
 		//driver.get("http://192.168.1.211:8080/Radaptive-1.0/");
 		driver.get("http://45.55.53.138:8082/Radaptive-1.0/");		
 		WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -52,8 +53,8 @@ public class RadaptiveAutomation {
 		}		
 		logger.info("==================Launching Home Page==============================");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("scroll(0,250)","");
+		/*JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("scroll(0,250)","");*/
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='side-menu-list']/li[7]/a")));
 		WebElement account = driver.findElement(By.xpath("//*[@id='side-menu-list']/li[7]/a"));	
 		account.click();
