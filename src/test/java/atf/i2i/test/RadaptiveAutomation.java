@@ -1,9 +1,7 @@
 package atf.i2i.test;
 
-import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -54,7 +52,7 @@ public class RadaptiveAutomation {
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		/*wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("enable-rclick-menuitems")));
 		String userName=driver.findElement(By.xpath(".//*[@id='header-inner']/div/div/ul/li[6]/a/span")).getText();*/
-		String userName="Bala Ganesh";
+		//String userName="Bala Ganesh";
 		logger.info("========User Loggedin Successfully================");
 /*		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Account')]")));
 		WebElement account = driver.findElement(By.xpath("//a[contains(text(),'Account')]"));

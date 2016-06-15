@@ -19,12 +19,12 @@ public class Radaptivenegative {
 	 */
 	static WebDriver driver;
 	static Logger logger=Logger.getLogger(Radaptivenegative.class);
-		
+
 	@BeforeSuite
 	public static void startDriver() {
 		driver=new HtmlUnitDriver(true);
 		((HtmlUnitDriver)driver).setJavascriptEnabled(true);
-    }	
+	}	
 
 	@Test
 	public void coreChecklistDemo() throws InterruptedException 
@@ -50,7 +50,7 @@ public class Radaptivenegative {
 		WebElement account = driver.findElement(By.xpath(".//*[@id='side-menu-list']/li[7]/a"));
 		account.click();*/
 		logger.info("==================Clicking the Account Menu==============================");
-	  /*waites.until(ExpectedConditions.presenceOfElementLocated(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a")));
+		/*waites.until(ExpectedConditions.presenceOfElementLocated(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a")));
 		try {
 			WebElement createaccount = driver.findElement(By.id("sideMenu4099af9c-74c8-11e1-ab81-001cc0ebc61a"));
 			createaccount.click();
@@ -88,8 +88,8 @@ public class Radaptivenegative {
 			logger.error("Error on saving on account: "+e);
 			Assert.fail("Error on saving on account");
 		}
-		
-	
+
+
 		try 
 		{
 			WebElement alertId = driver.findElement(By.id("message_label"));
