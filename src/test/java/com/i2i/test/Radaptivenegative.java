@@ -95,7 +95,6 @@ public class Radaptivenegative {
 			logger.error("Error on alert: " +e);
 			Assert.fail("Error on alert");
 		}
-		
 	}
 
 	@AfterMethod
