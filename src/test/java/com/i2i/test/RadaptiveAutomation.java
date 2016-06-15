@@ -43,7 +43,7 @@ waites.until(ExpectedConditions.presenceOfElementLocated(By.name("btnSubmit")));
 			logger.info("=================userfield=========================");
 			WebElement pass = driver.findElement(By.id("password"));
 			highlightElement(pass);
-			pass.sendKeys("superuser");
+			pass.sendKeys("super123$");
 			WebElement log = driver.findElement(By.id("btnSubmit"));
 			highlightElement(log);
 			log.click();
